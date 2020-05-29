@@ -1,10 +1,10 @@
 import React from 'react';
+import './../styles/Footer.styl';
 
 const Footer = () => {
-
   return (
     <div>
-      <h1>Curso de JS</h1>
+      <p>Footer Curso de JS</p>
     </div>
   );
 };
