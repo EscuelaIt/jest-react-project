@@ -7,7 +7,9 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
-    "lint": "eslint src/ --fix"
+    "lint": "eslint src/ --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "react",
@@ -32,6 +34,8 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "css-loader": "^3.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^4.3.0",
@@ -40,6 +44,8 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^2.7.0",
+    "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^8.2.1",
     "mini-css-extract-plugin": "^0.7.0",
     "prettier": "^1.19.1",
