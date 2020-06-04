@@ -4,7 +4,7 @@ import './../styles/Footer.styl';
 const Footer = () => {
   return (
     <div>
-      <p>Footer Curso de JS</p>
+      <p className="text">Footer Curso de JS</p>
     </div>
   );
 };
