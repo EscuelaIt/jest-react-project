@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const User = ({email, name, id}) => {
+const User = ({user, handlerDelete}) => {
+
+  const { name, email, id } = user;
 
   return (
     <div>
@@ -10,6 +12,7 @@ const User = ({email, name, id}) => {
       <Link to={`/users/${id}`}>
         Detail
       </Link>
+      <button onClick={(e) => handlerDelete(id, e)}>Eliminar</button>
     </div>
   );
 };

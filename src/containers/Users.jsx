@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { getUsers } from './../hooks/user';
 import User from './../components/User';
 
 const Users = () => {
-  const [users, setUsers] = useState([]);
+  const users = getUsers(`https://jsonplaceholder.typicode.com/users`);
 
-  useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/users`)
-      .then(data => data.json())
-      .then(data => setUsers(data));
-  }, []);
+  const handlerDelete = (id, event) => {
+    console.log(id);
+  }
 
   return (
     <div>
-      {users.map((user, index) => (
-        <User key={user.id} id={user.id} email={user.email} name={user.name} />
+      {users.map((user) => (
+        <User key={user.id} user={user} handlerDelete={handlerDelete} />
       ))}
     </div>
   );

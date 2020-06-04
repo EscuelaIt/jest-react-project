@@ -1,32 +1,24 @@
-const mockUsers = [
+const usersMocks = [
   {
-    "name": {
-      "title": "mr",
-      "first": "brad",
-      "last": "gibson"
-    },
+    "id": 1,
+    "email": "hi@nico.com",
+    "name": "Nicolas",
   },
   {
-    "name": {
-      "title": "mr",
-      "first": "brad",
-      "last": "gibson"
-    },
+    "id": 2,
+    "email": "2@nico.com",
+    "name": "Nicolas 2",
   },
   {
-    "name": {
-      "title": "mr",
-      "first": "brad",
-      "last": "gibson"
-    },
+    "id": 3,
+    "email": "3@nico.com",
+    "name": "Nicolas 3",
   },
   {
-    "name": {
-      "title": "mr",
-      "first": "brad",
-      "last": "gibson"
-    },
-  }
+    "id": 4,
+    "email": "4@nico.com",
+    "name": "Nicolas 4",
+  },
 ];
 
-export default mockUsers;
+export default usersMocks;
