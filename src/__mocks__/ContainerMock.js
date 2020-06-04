@@ -4,10 +4,10 @@ import { createBrowserHistory } from 'history';
 
 const history = createBrowserHistory();
 
-const ProviderMock = props => (
+const ContainerMock = props => (
   <Router history={history}>
     {props.children}
   </Router>
 );
 
-export default ProviderMock;
+export default ContainerMock;

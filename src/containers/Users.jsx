@@ -10,10 +10,14 @@ const Users = () => {
       .then(data => setUsers(data));
   }, []);
 
+  const handlerDelete = (id, event) => {
+    console.log(id);
+  }
+
   return (
     <div>
       {users.map((user, index) => (
-        <User key={user.id} id={user.id} email={user.email} name={user.name} />
+        <User key={user.id} user={user} handlerDelete={handlerDelete} />
       ))}
     </div>
   );

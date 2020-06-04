@@ -1,13 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Contact from '../../containers/Contact';
-import ProviderMock from '../../__mocks__/ProviderMock';
+import ContainerMock from '../../__mocks__/ContainerMock';
 
 describe('Tests for <Contact />', () => {
   const contact = mount(
-    <ProviderMock>
+    <ContainerMock>
       <Contact />
-    </ProviderMock>
+    </ContainerMock>
   );
 
   test('Render del componente Contact', () => {
